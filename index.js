@@ -1,10 +1,8 @@
 let nomeHeroi = "CODEGIRL";
 let nivel;
 
-//"Se XP for menor do que 1000 = Ferro." Se o herói tiver 1000 de xp, ele não terá nenhum nível.
-
 for (let xp = 500; xp <= 10500; xp += 1000) {
-    if(xp < 1000){ 
+    if(xp <= 1000){ 
         nivel = "FERRO";
 
     } else if (xp >= 1001 && xp <= 2000) {
@@ -19,7 +17,7 @@ for (let xp = 500; xp <= 10500; xp += 1000) {
         nivel = "ASCENDENTE";
     } else if (xp >= 9001 && xp <= 10000) {
         nivel = "IMORTAL";
-    } else if (xp >= 10001) {
+    } else{
         nivel = "RADIANTE";
     }
  
